@@ -52,7 +52,7 @@ var addTwoNumbers = function(l1, l2) {
     let List = new ListNode();
     let head = List;
     
-    while(l1 || l2 || sum > 0) {
+    while(l1 !== null || l2 !== null || sum > 0) {
         if(l1) {
             sum += l1.val;
             l1 =l1.next;
